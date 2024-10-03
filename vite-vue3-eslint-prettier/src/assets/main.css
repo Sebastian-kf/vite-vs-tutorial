@@ -1,6 +1,14 @@
 /* import css files */
 @import './typography.css';
 
+/* scss variable*/
+/* $primaryColor : violet;*/
+:root{
+    --primaryColor: violet;
+}
+
 body {
-    background-color: aqua;
+    /* background-color: aqua; */
+    /* background:primary */
+    background: var(--primaryColor);
 }

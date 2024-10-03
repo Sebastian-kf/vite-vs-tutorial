@@ -19,6 +19,11 @@ import HelloWorld from "./components/HelloWorld.vue";
 /*@import './assets/main.css' (max-width: 800px);*/
 
 #app {
+
+  & p {
+    color: greenyellow;
+  }
+
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
