@@ -2,8 +2,9 @@
 
 // import './assets/main.css';
 
-
-
+/* import the css module */
+import styles from './assets/example.module.css';
+console.log('css module',styles)
 
 
 import HelloWorld from "./components/HelloWorld.vue";
@@ -11,6 +12,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <h1 :class="styles.example">Hello CSS Modules</h1>
   <HelloWorld msg="Hello Vue 3 + Vite" />
 </template>
 
