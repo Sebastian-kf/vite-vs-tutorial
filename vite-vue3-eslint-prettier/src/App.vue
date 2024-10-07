@@ -6,12 +6,19 @@
 import styles from './assets/example.module.css';
 console.log('css module',styles)
 
+/* import static files */
+// import logo from './assets/logo.png';
+// console.log('logo', logo)
+//const logo =  new URL('./assets/logo.png', import.meta.url).href;
 
 import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img alt="Vue logo" src="./assets/logo.png"/>
+  <!-- <img alt="Vue logo" :src="logo" /> -->
+  <!-- absolute path (for public folder files) -->
+  <!-- <img alt="Vue logo" src="/logo.png" -->
   <h1 :class="styles.example">Hello CSS Modules</h1>
   <HelloWorld msg="Hello Vue 3 + Vite" />
 </template>
