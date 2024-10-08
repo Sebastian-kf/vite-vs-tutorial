@@ -1,15 +1,21 @@
 <script setup>
 
+//import styles
 // import './assets/main.css';
-
-/* import the css module */
+// import the css module 
 import styles from './assets/example.module.css';
 console.log('css module',styles)
 
-/* import static files */
+// import static files 
 // import logo from './assets/logo.png';
 // console.log('logo', logo)
 //const logo =  new URL('./assets/logo.png', import.meta.url).href;
+
+// import JSON data
+import data from './data.json'
+console.log("JSON data", data);
+import { developerMood } from './data.json'
+console.log("JSON.data.developerMood", developerMood);
 
 import HelloWorld from "./components/HelloWorld.vue";
 </script>
