@@ -17,6 +17,13 @@ console.log("JSON data", data);
 import { developerMood } from './data.json'
 console.log("JSON.data.developerMood", developerMood);
 
+// realistic use case for importing globs
+/* 
+const autoImportedModules = import.meta.glob("./assets/avatars/*.jpeg",{
+    eager: true
+})
+*/
+
 import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
@@ -25,6 +32,7 @@ import HelloWorld from "./components/HelloWorld.vue";
   <!-- <img alt="Vue logo" :src="logo" /> -->
   <!-- absolute path (for public folder files) -->
   <!-- <img alt="Vue logo" src="/logo.png" -->
+  <!-- <img v-for="img in images" :key="img" :src="img.default"> -->
   <h1 :class="styles.example">Hello CSS Modules</h1>
   <HelloWorld msg="Hello Vue 3 + Vite" />
 </template>

@@ -5,5 +5,9 @@ import App from "./App.vue";
 //import './assests/main.scss'
 import './assets/main.css';
 
+// import js glob
+const autoImportModules = import.meta.glob('./autoImports/*.js')
+console.log("importedGlob", autoImportModules)
+
 
 createApp(App).mount("#app");
