@@ -1,10 +1,10 @@
-<script setup>
+<script setup lang="ts">
 
 //import styles
-// import './assets/main.css';
+ import './assets/main.css';
 // import the css module 
-import styles from './assets/example.module.css';
-console.log('css module',styles)
+//import styles from "./assets/example.module.css";
+//console.log('css module', styles)
 
 // import static files 
 // import logo from './assets/logo.png';
@@ -12,15 +12,16 @@ console.log('css module',styles)
 //const logo =  new URL('./assets/logo.png', import.meta.url).href;
 
 // import JSON data
-import data from './data.json'
-console.log("JSON data", data);
-import { developerMood } from './data.json'
+// import data from './data.json'
+// console.log("JSON data", data);
+// import { developerMood } from './data.json'
+const developerMood: string = "Thrilled for TypeScript!" //TypeScript variable
 console.log("JSON.data.developerMood", developerMood);
 
 // realistic use case for importing globs
 /* 
 const autoImportedModules = import.meta.glob("./assets/avatars/*.jpeg",{
-    eager: true
+  eager: true
 })
 */
 
@@ -33,7 +34,7 @@ import HelloWorld from "./components/HelloWorld.vue";
   <!-- absolute path (for public folder files) -->
   <!-- <img alt="Vue logo" src="/logo.png" -->
   <!-- <img v-for="img in images" :key="img" :src="img.default"> -->
-  <h1 :class="styles.example">Hello CSS Modules</h1>
+  <h1>Hello CSS Modules</h1>
   <HelloWorld msg="Hello Vue 3 + Vite" />
 </template>
 
@@ -51,7 +52,7 @@ import HelloWorld from "./components/HelloWorld.vue";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #293540;
   margin-top: 60px;
 }
 </style>

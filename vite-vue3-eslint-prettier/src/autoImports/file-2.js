@@ -1,1 +1,1 @@
-console.log( message: "hello world from file 2");
+console.log("hello world from file 2");
