@@ -25,7 +25,10 @@ const autoImportedModules = import.meta.glob("./assets/avatars/*.jpeg",{
 })
 */
 
-import HelloWorld from "./components/HelloWorld.vue";
+// import componets
+//import HelloWorld from "./components/HelloWorld.vue";
+// import componet with alias
+import HelloWorld from "@/components/HelloWorld.vue";
 </script>
 
 <template>
